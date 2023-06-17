@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (playerPick === computerPick) {
             resultRound.textContent = "This round is a draw";
         } else if (playerPick === 'rock' && computerPick === 'scissors' || playerPick === 'scissors' && computerPick === 'paper' || playerPick === 'paper' && computerPick === 'rock') {
-            resultRound.textContent = "You won this round";
+            resultRound.innerHTML = `You won this round.<br> You played ${playerPick} and the computer played ${computerPick}`;
             playerScore.textContent = parseInt(playerScore.textContent) + 1
         } else if (computerPick === 'rock' && playerPick === 'scissors' || computerPick === 'scissors' && playerPick === 'paper' || computerPick === 'paper' && playerPick === 'rock') {
-            resultRound.textContent = "The computer won this round";
+            resultRound.innerHTML = `The computer won this round.<br> You played ${playerPick} and the computer played ${computerPick}`;
             computerScore.textContent = parseInt(computerScore.textContent) + 1
         };
 

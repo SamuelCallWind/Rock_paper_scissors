@@ -73,6 +73,8 @@ header {
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
 }
 .box:hover {
     background-color: aliceblue;
