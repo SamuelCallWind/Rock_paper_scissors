@@ -1,6 +1,6 @@
-* {
+/* * {
     border: solid red 2px;;
-}
+} */
 
 body {
     margin: 0;
@@ -77,4 +77,8 @@ header {
 .box:hover {
     background-color: aliceblue;
     color: black;
+}
+.containerBoxes .playAgain {
+    max-height: 40px;
+    min-height: auto;
 }
