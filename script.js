@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
             lastPickPlayer.textContent = '';
             lastPickComputer.textContent = '';
             newDiv.remove();
+            resultRound.textContent = '';
+
             boxes.forEach(function(box) {
                 box.style.display = 'flex';
             })
